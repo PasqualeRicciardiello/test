@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/script.js"></script>
+    <style>
+        #tekst1, #tekst2, #tekst3, #tekst4{
+            display: none;
+        }
+
+        #tekst1 {
+            background-color: red; color: black; padding: 10px;
+        }
+
+        #tekst2 {
+            background-color: blue; color: black; padding: 10px;
+        }
+
+        #tekst3 {
+            background-color: green; color: black; padding: 10px;
+        }
+
+        #tekst4 {
+            background-color: darkviolet; color: black; padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <LI><a href="#" onmouseover="showMenu('tekst1')" onmouseleave="hideMenu('tekst1')" onclick="alert('cześć')">odnisnik</a></LI>
+        <LI><a href="#" onmouseover="showMenu('tekst2')" onmouseleave="hideMenu('tekst2')">odnisnik</a></LI>
+        <LI><a href="#" onmouseover="showMenu('tekst3')" onmouseleave="hideMenu('tekst3')">odnisnik</a></LI>
+        <LI><a href="#" onmouseover="showMenu('tekst4')" onmouseleave="hideMenu('tekst4')">odnisnik</a></LI>
+    </ul>
+</nav>
+<div id="blok" onmouseover="zmien()"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Accusantium at corporis dicta doloribus, error excepturi hic,
+    ipsam mollitia nam nesciunt nostrum numquam obcaecati quam,
+    quibusdam quisquam ratione tempore voluptas voluptates.
+</div>
+
+<div id="tekst1">
+    tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1 tekst1
+</div>
+
+<div id="tekst2">
+    tekst2 tekst2 tekst2 tekst2 tekst2 tekst2 tekst2 tekst2 tekst2 tekst2tekst2 tekst2 tekst2 tekst2
+</div>
+
+<div id="tekst3">
+    tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3 tekst3
+</div>
+
+<div id="tekst4">
+    tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4 tekst4
+</div>
+
+<div id="tekst">
+    schowany schowany schowany schowany schowany schowany schowany schowany schowany schowany schowany
+</div>
+
+<script>
+    function zmien(){
+        let blok = document.getElementById('blok');
+        blok.style.color="red"
+    }
+
+    function showMenu(odnosnik){
+        const handler = document.getElementById(odnosnik);
+        handler.style.display="block"
+    }
+
+    function hideMenu(odnosnik){
+        const handler = document.getElementById(odnosnik);
+        handler.style.display="none"
+    }
+
+    const images = [];
+
+    images[0] = "kot01.jpg";
+    images[1] = "kot02.jpg";
+    images[2] = "kot03.jpg";
+    images[3] = "kot04.jpg";
+
+    for (let i=0; i<4; i++){
+        document.write("<img src='img/koty/" + images[i] + "' alt='kot' class='images'>");
+    }
+
+    let imie = "andrzej de'marco"
+    let nazwisko = "Palisada"
+    let adres = "ul. 22 lipca 5, 67-120 kożuchów"
+
+    document.write("<p>"+imie+" "+nazwisko+"<br>"+adres+"</p>")
+    let liczba1 =prompt("padaj pierwszą liczbę", 0)
+    let liczba2 =prompt("padaj drugą liczbę", 0)
+
+    document.write("suma 2 liczb=", sum (liczba1, liczba2))
+
+</script>
+</body>
+</html>

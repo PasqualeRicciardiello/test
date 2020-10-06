@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="HTML5, tabela" />
+    <meta name="description" content="Przykład prostej tabeli" />
+    <meta name="author" content="Jan Kowalski" />
+    <meta name="robots" content="all" />
+    <style type="text/css">
+        table, th, td
+        {
+            border-collapse:collapse;
+            border:1px solid black;
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Podpis Tabeli</caption>
+        <tr>
+            <th>Lp</th>
+            <th>Imię </th>
+            <th>Nazwisko</th>
+        </tr>
+        <tr>
+            <th>Treść01</th>
+            <td colspan="2">Treść02
+        </tr>
+        <tr>
+            <th>Treść03</th>
+            <td>Treść04</td>
+            <td>Treść05</td>
+        </tr>
+        <tr>
+            <td >Treść06</td>
+            <td >Treść07</td>
+            <td rowspan="2">
+                <table>
+                    <tr>
+                        <td>Treść1</td>
+                        <td>Treść2</td>
+                        <td>Treść3</td>
+                    </tr>
+                    <tr>
+                        <td>Treść1</td>
+                        <td>Treść2</td>
+                        <td>Treść3</td>
+                    </tr>
+                    <tr>
+                        <td>Treść1</td>
+                        <td>Treść2</td>
+                        <td>Treść3</td>
+                    </tr>
+                </table>
+
+            </td>
+
+        </tr>
+        <tr>
+            <th>Treść09</th>
+            <td>Treść10</td>
+
+        </tr>
+
+
+    </table>
+
+</body>
+</html>

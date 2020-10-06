@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+
+    <style>
+        .blok {
+         background-color: crimson;
+         padding: 5px;
+         width: 50%;
+         margin: 0 auto;
+         position: relative;
+         display: flex;
+        }
+    </style>
+
+    <style>
+        .blok1 {
+            background-color: cyan;
+            padding: 5px;
+            width: 50%;
+            top: 5px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+        }
+    </style>
+
+    <style>
+        .blok2 {
+            background-color: darkgreen;
+            top: 40px;
+            width: 50%;
+            position: absolute;
+        }
+    </style>
+    <style>
+        .inblock {
+            background-color: blueviolet;
+        }
+    </style>
+    <style>
+        .display_block, .display_inline, .display_inline_block
+        {
+            width:100px;
+            height:100px;
+            color:black;
+        }
+        .display_block
+        {
+            display:block;
+        }
+        .display_inline
+        {
+            display:inline;
+        }
+        .display_inline_block
+        {
+            display:inline-block;
+        }
+    </style>
+
+    <style>
+        .menu, .submenu
+        {
+            display:block;
+            position:absolute;
+            width:100px;
+            height:40px;
+            left:20px;
+            top:85px;
+            line-height:40px;
+            text-align:center;
+            background-color:red;
+            color:white;
+        }
+        .menu .submenu
+        {
+            display:none;
+            left: 100px;
+            top:0;
+            background-color: blue;
+        }
+        .menu:hover > .submenu
+        {
+            display:block;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="blok">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+    earum esse facilis ipsam ipsum maxime molestias nisi,
+    numquam officiis placeat quo repellendus suscipit?
+    Commodi eaque eligendi minus natus quibusdam quo!
+</div>
+
+<div class="blok1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+    earum esse facilis ipsam ipsum maxime molestias nisi,
+    numquam officiis placeat quo repellendus suscipit?
+    Commodi eaque eligendi minus natus quibusdam quo!
+
+    <div class="inblock">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+        earum esse facilis ipsam ipsum maxime molestias nisi,
+        numquam officiis placeat quo repellendus suscipit?
+        Commodi eaque eligendi minus natus quibusdam quo!
+    </div>
+</div>
+
+<div class="blok2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+    earum esse facilis ipsam ipsum maxime molestias nisi,
+    numquam officiis placeat quo repellendus suscipit?
+    Commodi eaque eligendi minus natus quibusdam quo!
+</div>
+
+<div class="display_block" style="background-color: springgreen;">
+    To jest pierwszy tekst
+</div>
+<div class="display_block" style="background-color:red;">
+    To jest drugi tekst
+</div>
+
+<div class="menu">
+    menu
+    <div class="submenu">
+        submenu
+    </div>
+</div>
+
+
+</body>
+</html>

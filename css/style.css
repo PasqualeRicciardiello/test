@@ -1,0 +1,11 @@
+#Mainmenu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#Mainmenu ul li {
+    width: 5%;
+    background-color: aqua;
+    margin-right: 0.5%;
+    padding: .5%;
+}

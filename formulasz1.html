@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formulasz</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+
+<div>
+    <form action="">
+        <table>
+            <tr>
+                <td>Imie</td>
+                <td><input type="text" id="Imie" placeholder="Imie" pattern="[A-Z]{1}[a-z]{2,}" onchange=changevalue("Imie","Imieform")></td>
+            </tr>
+            <tr>
+                <td>Nazwisko</td>
+                <td><td><input type="text" id="Nazwisko" placeholder="Nazwisko" pattern="[A-Z]{1}[a-z]{2,}" onchange=changevalue("Nazwisko","Nazwiskoform")></td>
+            </tr>
+            <tr>
+                <td>Ulica</td>
+                <td><td><input type="text" id="Ulica" placeholder="Ulica" pattern="[A-Z]{1}[a-z]{2,}" onchange=changevalue("Ulica","Ulicaform")></td>
+            </tr>
+            <tr>
+                <td>NrUlicy</td>
+                <td><td><input type="number" id="NrUlicy" placeholder="NrUlicy" pattern="[0-9]{1-5}" onchange=changevalue("NrUlicy","NrUlicyform")></td>
+            </tr>
+            <tr>
+                <td>imie</td>
+                <td><input type="submit" value="wyślij"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div id="dane">
+    <div id="Imieform"></div>
+    <div id="Nazwiskoform"></div>
+    <div id="Ulicaform"></div>
+    <div id="NrUlicyform"></div>
+</div>
+
+
+<script src="js/script.js4.js"></script>
+</body>
+</html>
