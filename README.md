@@ -1,6 +1,7 @@
 ### Opis repozytorium
 
-- dsdsd sd sd sd
+- Repozytorium miejsce uporządkowanego przechowywania dokumentów,
+z których wszystkie przeznaczone są do udostępniania
 
 # Editor.md
 
